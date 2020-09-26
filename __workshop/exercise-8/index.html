@@ -1,1 +1,61 @@
 <!-- ...crickets... -->
+<head>
+
+ <style>
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+textarea{
+color: gray;
+}
+
+ </style>
+
+</head>
+<body>
+
+<h1>Registration form</h1>
+
+  <form>
+        <label for="fname">Username</label>
+        <input type="text" required>
+        <label for="lname">password</label>
+        <input type="text" required><br>
+
+<h2>Which taxi do you require?</h2>
+
+  <input type="radio" id="car" name="taxi">
+  <label for="car">Car</label>
+  <input type="radio" id="female" name="taxi" >
+  <label for="van">Van</label>
+  <input type="radio" id="other" name="taxi" >
+  <label for="tuktuk">Tuk Tuk</label>
+
+  <h2>Choose your extras</h2>
+
+  <input type="checkbox" id="seat" name="seat">
+  <label for="seat">Baby seat</label>
+  <input type="checkbox" id="wheelchair" name="wheelchair">
+  <label for="wheelchair">Wheelchair access</label>
+  <input type="checkbox" id="window" name="window">
+  <label for="window">Privacy windows</label>
+
+  <h2>Where would you like us to pick you up?</h2>
+
+  <label for="location">Pickup Location:</label>
+  <select name="select">
+  <option value="select">Select One</option>
+  </select>
+
+  <h2>Additional Instructions</h2>
+  Special <textarea rows="2" cols="20" name="instructions" form="form1" onfocus="this.value=''">provide special instructions here</textarea>
+    
+  <input type="submit" value="Submit">
+      </form> 
+</body>
